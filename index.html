@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Postagem de Blog</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <img 
+            src="./img/certificacao-05.png" 
+            alt="Imagem contendo fundo branco, um capelo de formatura e um diploma"
+            width="50"
+            height="50"
+        >
+        <h1>Projeto de Certificação 2 - Postagem de Blog</h1>
+    </header>
+    <main id="principal">
+        <!-- Seção destinada à entrada de dados -->
+        <section class="secoes" id="entrada-dados">
+            <form id="frm-blog">
+                <div class="containers">
+                    <label for="titulo-post">Título:</label>
+                    <input type="text" name="titulo-post" id="titulo-post" placeholder="Insira um título para o seu post">
+                </div>
+                <div class="containers">
+                    <label for="conteudo-post">Conteúdo:</label>    
+                    <textarea name="conteudo-post" id="conteudo-post" rows="10" cols="30" placeholder="Seu post vai aqui..."></textarea>
+                </div>
+                <div class="containers">
+                    <button type="submit" id="btn-enviar">Postar</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Seção responsável pela saída de dados -->
+        <section class="secoes" id="saida-dados">
+            <div class="containers">
+                <h2 class= "saidas" id="titulo-renderizar"></h2>
+                <p class= "saidas" id="conteudo-renderizar"></p>
+            </div>
+        </section>
+    </main>
+    <footer><i>Desenvolvido por: Alex Silva Pereira.</i></footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

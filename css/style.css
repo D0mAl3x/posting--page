@@ -1,0 +1,94 @@
+/* Reset Básico */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    line-height: 1.6;
+    background-color: #c1bdf3;
+}
+
+#cabecalho, footer {
+    text-align: center;
+    margin: 0 0 4px;
+    padding: 16px;
+}
+
+#cabecalho {
+    display: flex; 
+    justify-content: center;
+    gap: 0.5rem;    
+}
+
+#principal{
+    max-width: 800px;
+    justify-self: center;
+    background-color: rgb(114, 103, 211);
+    margin: 3rem auto;
+    padding: 32px;
+    border-radius: 10px;
+}
+
+.containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Configurações para os campos de entrada de dados e para o botão */
+#titulo-post, 
+#conteudo-post, 
+#btn-enviar {
+    margin: 0 0 15px;
+    padding: .6rem 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+#btn-enviar {
+    background-color: rgb(13, 149, 3);
+    color: #fff;
+    font-weight: bold;
+    align-items: center;
+    border: 2px solid rgb(7, 72, 2);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#btn-enviar:hover {
+    background-color: rgb(7, 72, 2);
+}
+
+/* 
+    Classe criada para ocultar a seção de saída de dados no carregamento da página.
+    Quando o botão POSTAR for clicado, o evento acionado irá exibir a saída novamente.
+*/
+.hide {
+    display: none;
+}
+
+/* Configurações da saída de dados */
+#saida-dados{
+    background-color: rgb(216, 238, 144);
+    margin: 64px 0 0;
+    padding: 16px 16px;
+    border-radius: 10px;   
+}
+
+p {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+
